@@ -20,6 +20,6 @@ class Pistola(municion: Int, tipoDeMunicion: String, danio: Int, radio: TipoRadi
         require(danio in 1..5){"Error en el daño."}
     }
     private fun requireRadio(radio: TipoRadio){
-        require(radio in TipoRadio.REDUCIDO..TipoRadio.CORTO){"Error en el radio."}
+        require(radio == TipoRadio.REDUCIDO){"Error en el radio."}
     }
 }
